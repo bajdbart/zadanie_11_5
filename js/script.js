@@ -1,6 +1,7 @@
-function Button(text) {
+$(function() {
+  function Button(text) {
   this.text = text || "Hello";
-
+  console.log("this= " + this.text);
 }
 
 Button.prototype = {
@@ -18,3 +19,4 @@ Button.prototype = {
 
 var btn1 = new Button("Helloo!");
 btn1.create();
+})
